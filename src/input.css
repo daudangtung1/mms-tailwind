@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@import 'animate.css';
+
+@layer ultilities {
+    .container {
+        @apply mx-auto xl:max-w-[1142px] xl: px 0;;
+    }
+
+    .bg-slider-gradient {
+        background: linear-gradient(0.87deg, #000000 -39.87%, rgba(0, 0, 0, 0.18) 64.16%);
+    }
+}
