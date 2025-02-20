@@ -702,9 +702,6 @@
       max-width: 96rem !important;
     }
   }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
-  }
   .mt-\[17px\] {
     margin-top: 17px;
   }
@@ -714,14 +711,14 @@
   .mt-\[32px\] {
     margin-top: 32px;
   }
-  .mt-\[37px\] {
-    margin-top: 37px;
-  }
   .mt-\[56px\] {
     margin-top: 56px;
   }
   .mb-9 {
     margin-bottom: calc(var(--spacing) * 9);
+  }
+  .mb-\[9px\] {
+    margin-bottom: 9px;
   }
   .mb-\[15px\] {
     margin-bottom: 15px;
@@ -864,8 +861,8 @@
   .h-\[50\.6px\] {
     height: 50.6px;
   }
-  .h-\[94px\] {
-    height: 94px;
+  .h-\[75px\] {
+    height: 75px;
   }
   .h-\[265px\] {
     height: 265px;
@@ -903,14 +900,17 @@
   .w-1\/3 {
     width: calc(1/3 * 100%);
   }
+  .w-\[29px\] {
+    width: 29px;
+  }
   .w-\[110px\] {
     width: 110px;
   }
   .w-\[206\.74px\] {
     width: 206.74px;
   }
-  .w-\[29px\] {
-    width: 29px;
+  .w-\[calc\(\(100\%-36px\)\/3\)\] {
+    width: calc((100% - 36px) / 3);
   }
   .w-full {
     width: 100%;
@@ -1337,9 +1337,6 @@
   }
   .gap-\[20\.34px\] {
     gap: 20.34px;
-  }
-  .gap-\[148px\] {
-    gap: 148px;
   }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
@@ -1851,10 +1848,6 @@
   }
   .align-top {
     vertical-align: top;
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -2512,6 +2505,26 @@
   .sm\:px-\[27px\] {
     @media (width >= 40rem) {
       padding-inline: 27px;
+    }
+  }
+  .md\:w-1\/3 {
+    @media (width >= 48rem) {
+      width: calc(1/3 * 100%);
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-3 {
@@ -6125,6 +6138,9 @@
   animation-name: slideOutUp;
 }
 @layer ultilities {
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
   .container {
     margin-inline: auto;
     @media (width >= 80rem) {
