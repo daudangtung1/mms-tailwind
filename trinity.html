@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @keyframes fixedAnim {
+            0% {
+                right: 100%;
+            }
+        }
+
+        .item,
+        .swiper-slide {
+            z-index: 50;
+        }
+
+        .item:hover,
+        .swiper-slide:hover {
+            z-index: 10;
+        }
+
+        .item:before {
+            background: transparent linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%) repeat scroll 0 0;
+            content: "";
+            height: 100%;
+            position: absolute;
+            right: -75%;
+            top: 0;
+            transform: skewX(-25deg);
+            width: 50%;
+            will-change: transform, right, opacity;
+            display: none;
+            z-index: 2;
+        }
+
+        .item:hover:before {
+            display: block;
+            animation: 1s ease 0s normal none 1 running fixedAnim;
+            animation: 1s ease 0s normal none 1 running fixedAnim;
+            -webkit-animation: 1s ease 0s normal none 1 running fixedAnim;
+            -moz-animation: 1s ease 0s normal none 1 running fixedAnim;
+        }
+
+        .swiper-pagination {
+
+            position: relative;
+            bottom: 0 !important;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100% ;
+            padding-top: 64px;
+        }
+
+        .swiper-pagination-bullet {
+            flex: 1;
+            height: 5px;
+            border-radius: 0;
+            width: 100%;
+            margin: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="w-full h-[728px]">
+        <img src="assets/img/trinity-banner.jfif" alt="" class="w-full h-full object-cover">
+    </section>
+    <div class="mt-[260px] mb-[82px]">
+        <div class="container">
+            <section class="mb-[185px]">
+                <div class="flex justify-between 2xl:gap-0 gap-[30px]">
+                    <div class="2xl:w-[371px] md:w-1/2 w-full">
+                        <h2 class="font-bold text-[40px] leading-[48.76px] ml-[1px] mb-[85px]">
+                            TRINITY
+                        </h2>
+                        <p class="font-normal text-base leading-[19.5px]">
+                            Âm nhạc có tác động rất lớn tới thế giới nội tâm, giúp trẻ phát triển nhân cách toàn
+                            diện. Trẻ
+                            được
+                            phát triển toàn diện về nhận thức, ngôn ngữ, thể chất, thẩm mỹ, đặc biệt phát triển cảm xúc
+                            và
+                            hiểu
+                            biết xã hội.  Âm nhạc có tác động rất lớn tới thế giới nội tâm, giúp trẻ phát triển nhân
+                            cách
+                            toàn
+                            diện. Trẻ được phát triển toàn diện về nhận thức, ngôn ngữ, thể chất, thẩm mỹ, đặc biệt phát
+                            triển
+                            cảm xúc và hiểu biết xã hội.  Âm nhạc có tác động rất lớn tới thế giới nội tâm, giúp trẻ
+                            phát
+                            triển
+                            nhân cách toàn diện. Trẻ được phát triển toàn diện về nhận thức, ngôn ngữ, thể chất, thẩm
+                            mỹ,
+                            đặc
+                            biệt phát triển cảm xúc và hiểu biết xã hội. 
+                        </p>
+                        <a href="#"
+                            class="bg-white border border-[#F6B817] rounded-[11px] w-[180px] h-[50px] flex items-center mt-[54px] pl-[10px]">
+                            <span class="text-black uppercase text-[14px] font-medium leading-[17.07px] mr-3">
+                                TÌM HIỂU THÊM
+                            </span>
+                            <svg width="28" height="8" viewBox="0 0 28 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M27.1414 4.35355C27.3367 4.15829 27.3367 3.84171 27.1414 3.64645L23.9594 0.464466C23.7642 0.269204 23.4476 0.269204 23.2523 0.464466C23.0571 0.659728 23.0571 0.976311 23.2523 1.17157L26.0808 4L23.2523 6.82843C23.0571 7.02369 23.0571 7.34027 23.2523 7.53553C23.4476 7.7308 23.7642 7.7308 23.9594 7.53553L27.1414 4.35355ZM0 4.5L26.7879 4.5V3.5L0 3.5L0 4.5Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="2xl:w-[659px] md:w-1/2 w-full">
+                        <img src="assets/img/trinity1.jfif" alt="" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </section>
+            <section class="mb-[128px]">
+                <h2 class="font-bold text-[40px] leading-[48.76px] mb-[29px]">
+                    CHỨNG CHỈ
+                </h2>
+                <div class="mt-[29px]">
+                    <div class="swiper certificate-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="h-[577px] relative item">
+                                    <img src="assets/img/slide_1.jpg" alt="" class="w-full h-full object-cover">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 pt-[38px] pb-[39px] sm:px-[27px] px-[15px] backdrop-blur-[20px] bg-slider-gradient w-full h-[265px]">
+                                        <div class="xl:w-[249px] w-full">
+                                            <h3
+                                                class="h-[75px] line-clamp-3 font-semibold text-[20px] leading-[25px] text-white mb-[9px]">
+                                                TRINITY LONDON <br>2O24
+                                            </h3>
+                                            <p class="text-white font-normal text-xs leading-[14.63px] line-clamp-3">
+                                                Lorem ipsum dolor sit amet consectetur adipiscing elit. aliquam
+                                                tincidunt
+                                                elementum
+                                                sem non luctuslorem ipsum.
+                                            </p>
+                                            <a href="#"
+                                                class="bg-white border border-[#F6B817] rounded-[3px] w-[110px] h-[23px] flex items-center justify-center mt-[17px]">
+                                                <span
+                                                    class="text-black uppercase text-[10px] font-medium leading-[12.19px]">
+                                                    TÌM HIỂU THÊM
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="h-[577px] relative item">
+                                    <img src="assets/img/slide_2.png" alt="" class="w-full h-full object-cover">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 pt-[38px] pb-[39px] sm:px-[27px] px-[15px] backdrop-blur-[20px] bg-slider-gradient w-full h-[265px]">
+                                        <div class="xl:w-[249px] w-full">
+                                            <h3
+                                                class="h-[75px] line-clamp-3 font-semibold text-[20px] leading-[25px] text-white mb-[9px]">
+                                                Làm sao để duy trì thói quen luyện đàn trong kì nghỉ lễ?
+                                            </h3>
+                                            <p class="text-white font-normal text-xs leading-[14.63px] line-clamp-3">
+                                                Lorem ipsum dolor sit amet consectetur adipiscing elit. aliquam
+                                                tincidunt
+                                                elementum
+                                                sem non luctuslorem ipsum.
+                                            </p>
+                                            <a href="#"
+                                                class="bg-white border border-[#F6B817] rounded-[3px] w-[110px] h-[23px] flex items-center justify-center mt-[17px]">
+                                                <span
+                                                    class="text-black uppercase text-[10px] font-medium leading-[12.19px]">
+                                                    TÌM HIỂU THÊM
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="h-[577px] relative item">
+                                    <img src="assets/img/slide_3.jpg" alt="" class="w-full h-full object-cover">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 pt-[38px] pb-[39px] sm:px-[27px] px-[15px] backdrop-blur-[20px] bg-slider-gradient w-full h-[265px]">
+                                        <div class="xl:w-[249px] w-full">
+                                            <h3
+                                                class="h-[75px] line-clamp-3 font-semibold text-[20px] leading-[25px] text-white mb-[9px]">
+                                                Hành trình âm nhạc cùng các con
+                                            </h3>
+                                            <p class="text-white font-normal text-xs leading-[14.63px] line-clamp-3">
+                                                Lorem ipsum dolor sit amet consectetur adipiscing elit. aliquam
+                                                tincidunt
+                                                elementum
+                                                sem non luctuslorem ipsum.
+                                            </p>
+                                            <a href="#"
+                                                class="bg-white border border-[#F6B817] rounded-[3px] w-[110px] h-[23px] flex items-center justify-center mt-[17px]">
+                                                <span
+                                                    class="text-black uppercase text-[10px] font-medium leading-[12.19px]">
+                                                    TÌM HIỂU THÊM
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="h-[577px] relative item">
+                                    <img src="assets/img/slide_3.jpg" alt="" class="w-full h-full object-cover">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 pt-[38px] pb-[39px] sm:px-[27px] px-[15px] backdrop-blur-[20px] bg-slider-gradient w-full h-[265px]">
+                                        <div class="xl:w-[249px] w-full">
+                                            <h3
+                                                class="h-[75px] line-clamp-3 font-semibold text-[20px] leading-[25px] text-white mb-[9px]">
+                                                Hành trình âm nhạc cùng các con
+                                            </h3>
+                                            <p class="text-white font-normal text-xs leading-[14.63px] line-clamp-3">
+                                                Lorem ipsum dolor sit amet consectetur adipiscing elit. aliquam
+                                                tincidunt
+                                                elementum
+                                                sem non luctuslorem ipsum.
+                                            </p>
+                                            <a href="#"
+                                                class="bg-white border border-[#F6B817] rounded-[3px] w-[110px] h-[23px] flex items-center justify-center mt-[17px]">
+                                                <span
+                                                    class="text-black uppercase text-[10px] font-medium leading-[12.19px]">
+                                                    TÌM HIỂU THÊM
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="">
+                <h2 class="font-bold text-[40px] leading-[48.76px] mb-[29px]">
+                    HÌNH ẢNH VỀ SỰ KIỆN TRINITY
+                </h2>
+                <div class="grid lg:grid-cols-3 grid-cols-2 gap-[15px]">
+                    <div class="h-[577px] relative item">
+                        <img src="assets/img/slide_1.jpg" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute bottom-0 left-0 right-0 pt-[38px] pb-[39px] sm:px-[27px] px-[15px] backdrop-blur-[20px] bg-slider-gradient w-full h-[265px]">
+                            <div class="xl:w-[249px] w-full">
+                                <h3
+                                    class="h-[75px] line-clamp-3 font-semibold text-[20px] leading-[25px] text-white mb-[9px]">
+                                    TRINITY LONDON <br>2O24
+                                </h3>
+                                <p class="text-white font-normal text-xs leading-[14.63px] line-clamp-3">
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elit. aliquam tincidunt
+                                    elementum
+                                    sem non luctuslorem ipsum.
+                                </p>
+                                <a href="#"
+                                    class="bg-white border border-[#F6B817] rounded-[3px] w-[110px] h-[23px] flex items-center justify-center mt-[17px]">
+                                    <span class="text-black uppercase text-[10px] font-medium leading-[12.19px]">
+                                        TÌM HIỂU THÊM
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[577px] relative item">
+                        <img src="assets/img/slide_2.png" alt="" class="w-full h-full object-cover">
+                        <div
+                            class="absolute bottom-0 left-0 right-0 pt-[38px] pb-[39px] sm:px-[27px] px-[15px] backdrop-blur-[20px] bg-slider-gradient w-full h-[265px]">
+                            <div class="xl:w-[249px] w-full">
+                                <h3
+                                    class="h-[75px] line-clamp-3 font-semibold text-[20px] leading-[25px] text-white mb-[9px]">
+                                    Làm sao để duy trì thói quen luyện đàn trong kì nghỉ lễ?
+                                </h3>
+                                <p class="text-white font-normal text-xs leading-[14.63px] line-clamp-3">
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elit. aliquam tincidunt
+                                    elementum
+                                    sem non luctuslorem ipsum.
+                                </p>
+                                <a href="#"
+                                    class="bg-white border border-[#F6B817] rounded-[3px] w-[110px] h-[23px] flex items-center justify-center mt-[17px]">
+                                    <span class="text-black uppercase text-[10px] font-medium leading-[12.19px]">
+                                        TÌM HIỂU THÊM
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    new Swiper('.certificate-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        slidesPerView: 'auto',
+        loop: false,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 15
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            }
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+    });
+</script>
+
+</html>
